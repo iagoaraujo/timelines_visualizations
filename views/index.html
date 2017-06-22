@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pesquisa - Timelines</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/business-frontpage.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <hr>
+		
+        <div class="row">
+            <h2>Pesquisa sobre visualização de Casos</h2>
+			<br>
+			<div>
+                <p>Estamos pesquisando sobre como as pessoas percebem sequências de eventos em diferentes interfaces. A ideia desse questionário é avaliar essas interfaces com relação a sua capacidade de representar as informações de um Caso cadastrado no Epol, o sistema
+				de gerenciamento de inquéritos da PF.</p>
+                <p>O questionário será respondido de forma anônima e os resultados serão utilizados unicamente por esse estudo, sendo este realizado no Mestrado em Ciência da Computação da UFCG (Universidade Federal de Campina Grande).</p>
+				<p>As sequências de eventos no Caso serão representadas por três diferentes interfaces:</p>
+			</div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="img-circle img-responsive img-center" src="img/timeline_pagina_4_linear.png" alt="">
+            </div>
+            <div class="col-sm-4">
+                <img class="img-circle img-responsive img-center" src="img/timeline_pagina_4_radial.png" alt="">
+            </div>
+            <div class="col-sm-4">
+                <img class="img-circle img-responsive img-center" src="img/vertical_timeline.png" alt="">
+            </div>
+        </div>
+		
+		<div class="row">
+			<p>Clique no botão abaixo dar início ao questionário:</p>
+			<button id="open">Abrir Questionário</button>
+		<div>
+        <!-- /.row -->
+
+        <hr>
+
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+		<script>
+		$('#open').click(function() {
+			var index = Math.floor(Math.random() * 3);
+			var forms = ['https://goo.gl/forms/ZrX8mhl1ZAW99TVx1',
+						'https://goo.gl/forms/RiZX0C0r96EMFiDp2',
+						'https://goo.gl/forms/IREqnWhP2aQ0XAwt2'];
+			window.location.href = forms[index];
+			return false;
+		});
+	</script>
+</body>
+
+</html>
